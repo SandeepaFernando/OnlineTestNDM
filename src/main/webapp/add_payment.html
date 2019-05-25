@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+<body>
+	<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Payment Id</label>
+    <input type="text" id="payment_id" name="payment_id" placeholder="Payment id">
+
+    <label for="lname">Order Id</label>
+    <input type="text" id="order_id" name="order_id" placeholder="Order id">
+
+    <label for="lname">User Id</label>
+    <input type="text" id="user_id" name="user_id" placeholder="User id">
+    
+    <label for="lname">Full Amount</label>
+    <input type="text" id="fullAmount" name="fullAmount" placeholder="Full name">
+    
+    <label for="lname">Date</label>
+    <input type="date" id="date" name="date" placeholder="Date">
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+	
+
+</body>
+</html>
